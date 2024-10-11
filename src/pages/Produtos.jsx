@@ -31,7 +31,7 @@ const Produtos = () => {
     <div>
       <Container>
       <div className='d-grid col-4 gap-2'>
-        <h1>Lista de Alimentos</h1>
+        <h1>Lista de Alimentosssss</h1>
         <Button variant="primary" size='lg' className='mb-3 d-inline-flex justify-content-center' onClick={() => {
           setModalCadastrar(true)
         }}><span className='material-symbols-outlined flex' style={{fontSize:"30px"}}>add_circle</span>cadastrar</Button>{' '}       
