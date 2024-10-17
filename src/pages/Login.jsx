@@ -5,10 +5,13 @@ import Alert from 'react-bootstrap/Alert';
 import Button from 'react-bootstrap/Button';
 import Nav from "react-bootstrap/Nav";
 import {useState, useEffect} from "react";
+import { useNavigate } from 'react-router-dom';
 
 const url = "http://localhost:5000/usuarios"
 
 const Login = () => {
+  const navigate = useNavigate()
+
   const [email, setEmail] = useState("")
   const [senha, setSenha] = useState("")
 
@@ -58,6 +61,7 @@ const Login = () => {
           setAlertaMensagem("Login efetuado com sucesso")
           setAlertaVariant("sucesso")
           alert("Login efetuado com sucesso")
+          navigate('/produtos')
       
         }
         else{
@@ -68,13 +72,13 @@ const Login = () => {
       }
       else{
         setAlertaClass("mb-3")
-        setAlertaMensagem("O ampo senha não pode ser vazio")
+        setAlertaMensagem("O campo senha não pode ser vazio")
       }
       
     }
     else{
       setAlertaClass("mb-3")
-      setAlertaMensagem("O ampo email não pode ser vazio")
+      setAlertaMensagem("O campo email não pode ser vazio")
     }
   }
   

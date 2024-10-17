@@ -10,22 +10,16 @@
   ],
   "produtos": [
     {
-      "idAlimento": "1",
+      "id": "1",
       "nomeAlimento": "cenoura",
       "categoria": "verdura",
-      "preco": "$50"
+      "preco": "50"
     },
     {
-      "idAlimento": "2",
+      "id": "2",
       "nomeAlimento": "Maça",
       "categoria": "Fruta",
-      "preco": "$10"
-    },
-    {
-      "idAlimento": "3",
-      "nomeAlimento": "Chips",
-      "categoria": "Besteira",
-      "preco": "$5"
+      "preco": "10"
     }
   ]
 }
