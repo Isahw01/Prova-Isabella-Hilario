@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/esm/Container';
 import Table from 'react-bootstrap/Table';
 import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import {useState, useEffect} from "react";
-import ModalCadastrar from '../components/ModalCadastrar';
 import NavBar from '../components/NavBar';
 import { useNavigate } from 'react-router-dom';
 
@@ -90,11 +89,6 @@ const Produtos = () => {
         ))}
       </tbody>
     </Table>
-    <ModalCadastrar show={modalCadastrar}
-    onHide={() => {
-      setModalCadastrar(false)
-    }}/>
-
       </Container>
     </div>
   )
